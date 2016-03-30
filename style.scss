@@ -1,0 +1,25 @@
+$small-break: 270px;
+$large-break: 961px;
+
+.grid {
+  // width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+   
+ }
+
+    .grid__cell {
+ 
+         @media (min-width: $small-break) {
+              width: 21%;
+         }
+
+          @media (max-width: $large-break) {
+              width: 41%;
+          }
+    }
+
+         .grid__image {
+             width: 95%;  
+         }  
